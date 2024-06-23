@@ -1,10 +1,12 @@
 import mysql from 'mysql2/promise';
+require('dotenv')
 
 const dbConfig = {
-  host: 'sql12.freemysqlhosting.net	',
-  user: 'sql12715136',
-  password: 'EPe44psstU',
-  database: 'sql12715136',
+  host: process.env.SERVER,
+  user: process.env.USERNAME,
+  password: process.env.PASSWORD,
+  database: process.env.NAME,
+  port: process.env.PORT,
 };
 
 const createConnection = async () => {
