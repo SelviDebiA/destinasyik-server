@@ -7,7 +7,7 @@ const dbConfig = {
   user: process.env.USERNAME,
   password: process.env.PASSWORD,
   database: process.env.NAME,
-  port: process.env.PORT,
+  port: process.env.PORT_DB,
 };
 
 const createConnection = async () => {
